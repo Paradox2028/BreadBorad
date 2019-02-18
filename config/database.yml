@@ -20,9 +20,9 @@ default: &default
   # For details on connection pooling, see Rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  username: ubuntuVM
-  password: matsue
-  host: shimane.myqnapcloud.com
+  username: bbsql
+  password: BBlogin
+  host: localhost
 
 development:
   <<: *default
