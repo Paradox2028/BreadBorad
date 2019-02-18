@@ -18,5 +18,5 @@
 //= require popper
 //= require bootstrap-sprockets
 
-//= require Cyborg/loader
-//= require Cyborg/bootswatch
+//= require cyborg/loader
+//= require cyborg/bootswatch
