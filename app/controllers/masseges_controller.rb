@@ -1,0 +1,2 @@
+class MassegesController < ApplicationController
+end
