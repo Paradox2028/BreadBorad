@@ -3,10 +3,10 @@ class MessagesController < ApplicationController
   end
 
   def create
-    @message = Article.new(message_params)
+    @message = Message.new(message_params)
 
     @message.save
-    redirect_to @article
+    redirect_to @message
   end
 
   private
