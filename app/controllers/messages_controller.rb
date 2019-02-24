@@ -3,6 +3,15 @@ class MessagesController < ApplicationController
   end
 
   def create
-    render plain: params[:messege].inspect
+    @message = Article.new(message_params)
+
+    @message.save
+    redirect_to @article
   end
+
+  private
+    def message_params
+      params.require(:message).permit(:title, :title, :text)
+    end
+  
 end
