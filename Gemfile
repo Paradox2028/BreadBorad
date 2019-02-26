@@ -69,3 +69,6 @@ end
 gem 'twitter-bootswatch-rails-helpers'
 gem 'execjs'
 gem 'therubyracer'
+
+gem 'less-rails'
+gem 'execs'
