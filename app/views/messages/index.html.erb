@@ -17,7 +17,7 @@
       <td><%= message.content %></td>
       <td><%= link_to 'Show', message_path(message) %></td>
       <td><%= link_to 'Edit', edit_message_path(message) %></td>
-      <td><%= link_to 'Desroy', destroy_message_path(message),
+      <td><%= link_to 'Desroy', message_path(message),
               method: :delete, data: { confirm: 'Are you sure?' } %>
       </td>
     </tr>
