@@ -13,6 +13,10 @@ class MessagesController < ApplicationController
     redirect_to @message
   end
 
+  def index
+    @message = Message.all
+  end
+
   private
     def message_params
       params.require(:message).permit(:title, :username, :content)
