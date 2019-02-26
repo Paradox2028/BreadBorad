@@ -3,15 +3,15 @@ class MessagesController < ApplicationController
   end
 
   def create
-    @message = Message.new(params[:message])
+    @message = Message.new(message_params)
 
     @message.save
     redirect_to @message
   end
 
-#  private
-#    def message_params
-#      params.require(:message).permit(:title, :username, :content)
-#    end
+  private
+    def message_params
+      params.require(:message).permit(:title, :username, :content)
+    end
 
 end
