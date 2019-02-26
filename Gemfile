@@ -62,12 +62,6 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 
-group :assets do
-    gem 'twitter-bootswatch-rails'
-end
-
-gem 'twitter-bootswatch-rails-helpers'
-gem 'execjs'
-gem 'therubyracer'
-
-gem 'less-rails'
+gem 'autoprefixer-rails'
+gem 'bootstrap-sass'
+gem 'bootswatch-rails'
