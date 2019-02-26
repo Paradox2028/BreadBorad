@@ -22,7 +22,7 @@ class MessagesController < ApplicationController
   end
 
   def edit
-    @article = Article.find(params[:id])
+    @message = Message.find(params[:id])
   end
 
   private
