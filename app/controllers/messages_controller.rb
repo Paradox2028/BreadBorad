@@ -21,6 +21,10 @@ class MessagesController < ApplicationController
     @message = Message.all
   end
 
+  def edit
+    @article = Article.find(params[:id])
+  end
+
   private
     def message_params
       params.require(:message).permit(:title, :username, :content)
